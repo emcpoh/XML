@@ -1,0 +1,92 @@
+XML
+ 21. Создать внешний репозиторий c названием XML. /// https://github.com/emcpoh?tab=repositories -> New -> XML
+ 22. Клонировать репозиторий XML на локальный компьютер. /// git clone https://github.com/emcpoh/XML
+ 23. Внутри локального XML создать файл “new.xml”. 
+
+///
+cd XML/
+touch new.xml
+
+ 24. Добавить файл под гит. /// git add .
+ 25. Закоммитить файл. /// git commit -m "new.xml was added"
+ 26. Отправить файл на внешний GitHub репозиторий. /// git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+///
+cat > new.xml
+<About_me>
+        <Full_name>Sergei Kaplienko</Full_name>
+        <Age>23</Age>
+        <Pets_quantity>5</Pets_quantity>
+        <Future_desired_salary>75000</Future_desired_salary>
+</About_me>
+
+
+
+ 28. Отправить изменения на внешний репозиторий. /// 
+
+git commit -a -m 'Added info about me in new.xml'
+git push
+
+ 29. Создать файл preferences.xml /// touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. /// 
+
+cat > preferences.xml
+<My_preferences>
+        <Fav_movie>Seven</Fav_movie>
+        <Fav_TV_series>Big Bang Theory</Fav_TV_series>
+        <Fav_food>Lahmacun</Fav_food>
+        <Fav_season>Summer</Fav_season>
+        <Country_I_would_like_to_visit>USA</Country_I_would_like_to_visit>
+</My_preferences>
+
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML /// 
+cat > skills.xml
+<My_skills>
+        <1st_skill>Terminal Linux</1st_skill>
+        <2nd_skill>SQL</2nd_skill>
+        <3rd_skill>Git</3rd_skill>
+        <4th_skill>Postman</4th_skill>
+        <5th_skill>Client-server architecture</5th_skill>
+        <6th_skill>Mobile testing</6th_skill>
+</My_skills>
+
+
+ 32. Сделать коммит в одну строку.
+
+ ///
+ 
+git add .
+git commit -m "preferences.xml and skills.xml are added"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий. /// git push
+ 34. На веб интерфейсе создать файл bug_report.xml. /// https://github.com/emcpoh/XML -> Add file -> Create new file -> bug_report.xml
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 34 -> Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. 
+
+/// 
+https://github.com/emcpoh/XML/blob/main/bug_report.xml -> Edit this file ->
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+  <description>When attempting to save changes to a user's profile, an error occurs and the changes are not saved.</description>
+  <steps>
+    <step>Log in to the application.</step>
+    <step>Navigate to the user's profile page.</step>
+    <step>Edit the user's profile information.</step>
+    <step>Click the 'Save' button.</step>
+  </steps>
+  <expected_result>The changes to the user's profile should be saved successfully.</expected_result>
+  <actual_result>An error message appears and the changes are not saved.</actual_result>
+  <environment>
+    <os_version>Windows 11</os_version>
+    <app_version>2.1.1</app_version>
+    <language>English</language>
+  </environment>
+  <additional_info>The error message displayed is 'Unable to save changes to user profile. Please try again later.'</additional_info>
+</bug_report>
+
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. /// 36 -> Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML /// git pull
