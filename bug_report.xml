@@ -1,1 +1,18 @@
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+  <description>When attempting to save changes to a user's profile, an error occurs and the changes are not saved.</description>
+  <steps>
+    <step>Log in to the application.</step>
+    <step>Navigate to the user's profile page.</step>
+    <step>Edit the user's profile information.</step>
+    <step>Click the 'Save' button.</step>
+  </steps>
+  <expected_result>The changes to the user's profile should be saved successfully.</expected_result>
+  <actual_result>An error message appears and the changes are not saved.</actual_result>
+  <environment>
+    <os_version>Windows 11</os_version>
+    <app_version>2.1.1</app_version>
+    <language>English</language>
+  </environment>
+  <additional_info>The error message displayed is 'Unable to save changes to user profile. Please try again later.'</additional_info>
+</bug_report>
